@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+
+
+}
+
+
+
+body{
+
+    background-color: rgba(28, 58, 155, 0.452);
+}
+
+
+/* #HEADERRRRRRRRRRRRRRRRRRRRRR */
+.header{
+
+    background-color: rgb(25, 169, 194);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+
+}
+
+.header .logo{
+cursor: pointer;
+margin-right: auto;
+
+}
+
+.header .logo img{
+    height: 150px;
+    width: auto;
+    transition: all 0.3s;
+
+}
+
+.header .logo img:hover{
+
+    transform: scale(1.2);
+
+}
+
+.header .nav-links{
+
+    list-style: none;
+
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+    padding-top: 18px;
+
+}
+
+.header .nav-links li:hover{
+
+    transform: scale(1.1);
+    transition: all 0.6s;
+
+}
+
+.header .nav-links a{
+
+    font-size: 700;
+    color: rgb(6, 7, 7);
+    transition: all 1s;
+
+
+}
+
+.header .nav-links li a:hover{
+    color: rgb(0, 183, 255);
+    
+}
+
+.menu{
+    display: none;
+}
+
+.header .btn button,
+.header .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: cadetblue;
+    padding: 9px 25px;
+    background: #000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover,.header .menu button:hover{
+    background-color: rgb(5, 238, 238);
+    color: aliceblue;
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:1010px){
+
+    .nav-links{
+        display: none;
+    }
+
+    .menu{
+        display: inherit;
+    }
+}
+    
+
+
+/*nav responsive*/
+
+.header a{
+    text-decoration: none;
+}
+
+.header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: rgb(0, 225, 255);
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus{
+    color: chartreuse;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+
+}
+
+@media  screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+
+    }
+
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+}
+
+/* ----- LOGIN ----- */
+
+.bg {
+	background: url(../img/ITFactory.png);
+	background-position: center center;
+	background-size: cover;
+}
+
+.my-3 {
+	text-align: left;
+}
+
+.mb-4 {
+	text-align: left;
+}
+
+/* ------ REGISTRAR ----- */
+
+
+.perfil {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+.user {
+	box-shadow: rgba(155, 155, 155, 0.15) 0px 0px 20px 3px;
+	border-radius: 50%;
+	width: 35%;
+	height: 35%;
+}
+
+.wdcn {
+	width: 400px;
+	height: 580px;
+}
+
+/* ----- EMPLEADOS ----- */
+
+table {
+	text-align: center;
+	margin-left: 23px;
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 45px;
+}
+
+table#t1 {
+	left: -25%;
+}
+
+/*Aqui le modifico el tamaño de la letra y el color al los titulos de cada columna*/
+table thead tr th {
+	padding: 10px;
+	font-size: 25px;
+	color: #102759;
+}
+
+/*Aqui le modifico el color de la letra y el borde de cada elemento agregado*/
+table tbody tr td {
+	padding: 10px;
+	color: #0f50a8;
+	border: solid 1px;
+}
+
+/* eliminar bordes a la columna donde se encuentran los botones*/
+.boton {
+	border: none;
+}
+
+/* colores de muestra*/
+
+.colores1 {
+	background-color: #0873e5;
+}
+
+.colores2 {
+	background-color: #15c1f5;
+}
+
+.colores3 {
+	background-color: #102759;
+}
+
+.colores4 {
+	background-color: #0f50a8;
+}
+
+.scsalir {
+	margin-left: 25%;
+}
+/* 
+// Text */
+input[type="text"],
+input[type="email"] {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: 0.2em solid #1ee2e9;
+	background: rgba(#1ee2e9, 0.2);
+	border-radius: 0.2em 0.2em 0 0;
+	padding: 0.4em;
+	color: #1ebae9;
+}
+
+/* // Button */
+
+
+  input[type="submit"] {
+	appearance: none;
+	border: 0.2em solid #1e8ee9;
+	background: hsl(0 0 0/0);
+	padding: 0.85em 1.5em;
+	color: #050404;
+	border-radius: 2em;
+	transition: 1s;
+	&:hover,
+	&:focus,
+	&:active {
+        background-color: #1e9fe9;
+		color: #d3caca;
+	}
+}
